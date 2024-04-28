@@ -83,6 +83,13 @@ body {
       width: 180px;
     }
   }
+  .mostrar {
+    padding: 0 2rem;
+    & img {
+      width: 220px;
+      height: 400px;
+    }
+  }
   .mostrar-text {
     width: 100%;
   }
