@@ -66,8 +66,8 @@ body {
   .mostrar {
     padding: 0 2rem;
     & img {
-      width: 250px;
-      height: 500px;
+      width: 200px;
+      height: 400px;
     }
   }
 }
@@ -83,13 +83,7 @@ body {
       width: 180px;
     }
   }
-  .mostrar {
-    padding: 0 2rem;
-    & img {
-      width: 200px;
-      height: 350px;
-    }
-  }
+
   .mostrar-text {
     width: 100%;
   }
