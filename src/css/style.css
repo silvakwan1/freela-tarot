@@ -7,9 +7,9 @@
 
 body {
   height: 100vh;
-  background: linear-gradient(-45deg, #56125b, #0f0f10, #3a2d9d);
+  background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
   background-size: 400% 400%;
-  animation: gradient 5s ease infinite alternate;
+  animation: gradient 8s ease infinite alternate;
 }
 
 .container {
@@ -71,6 +71,9 @@ body {
 }
 
 @media (max-width: 740px) {
+  body {
+    background-size: 200% 200%;
+  }
   .cards {
     display: flex;
     justify-content: center;
