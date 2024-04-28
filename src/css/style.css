@@ -1,0 +1,85 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite alternate;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.cards {
+  display: flex;
+  gap: 4rem;
+
+  & img {
+    width: 200px;
+  }
+}
+.card-1 {
+  width: 200px;
+  position: relative;
+}
+
+.card-1--frent {
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+.card-1--traz {
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  opacity: 0;
+  transition: transform 0.5s;
+}
+
+.cards:has(.card-1:hover) .card-1--traz {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+.cards:has(.card-1:hover) .card-1--frent {
+  transform: rotateY(-180deg);
+  opacity: 0;
+}
+
+.mostrar {
+  position: absolute;
+  display: none;
+  padding: 0 4rem;
+  place-items: center;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  width: 100vw;
+  & img {
+    width: 400px;
+    height: 600px;
+  }
+  & p {
+    color: white;
+  }
+}
+.mostrar.active {
+  display: grid;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
