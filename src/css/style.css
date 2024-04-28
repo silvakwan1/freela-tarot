@@ -7,9 +7,9 @@
 
 body {
   height: 100vh;
-  background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+  background: linear-gradient(-45deg, #56125b, #0f0f10, #3d338f);
   background-size: 400% 400%;
-  animation: gradient 8s ease infinite alternate;
+  animation: gradient 5s ease infinite alternate;
 }
 
 .container {
@@ -72,7 +72,8 @@ body {
 
 @media (max-width: 740px) {
   body {
-    background-size: 200% 200%;
+    background-size: 900% 900%;
+    animation: gradient 8s ease infinite alternate;
   }
   .cards {
     display: flex;
@@ -87,6 +88,18 @@ body {
   .mostrar-text {
     width: 100%;
   }
+
+  /* @keyframes gradient {
+    0% {
+      background-position: 0% 100%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 100%;
+    }
+  } */
 }
 
 @media (max-width: 400px) {
