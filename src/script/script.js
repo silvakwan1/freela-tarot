@@ -19,9 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
 function ativarCarta(card) {
   const image = document.querySelector("#mostrar-image");
   const text = document.querySelector("#mostrar-text");
+  const audio = document.querySelector("#audio");
   const src = localeImage[card];
   const texto = localetext[card];
 
+  const Audio = localeAudio[card];
+  audio.src = Audio;
+  audio.play();
   text.textContent = texto;
   image.src = src;
 
@@ -32,6 +36,12 @@ const localeImage = {
   "card-1": "src/assets/171FEB46-0F12-4AC0-B441-826A7310F2D2.jpg",
   "card-2": "src/assets/616BB321-087D-4878-B2BC-C89746383F20.jpg",
   "card-3": "src/assets/FEB88856-8847-49AA-9E5E-28F3C6D1D5D3.jpg",
+};
+
+const localeAudio = {
+  "card-1": "src/assets/carta 1.mp3",
+  "card-2": "src/assets/carta 2.mp3",
+  "card-3": "src/assets/carta 3.mp3",
 };
 const localetext = {
   "card-2":
