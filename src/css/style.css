@@ -2,6 +2,7 @@
   font-family: Arial, sans-serif;
   margin: 0;
   box-sizing: border-box;
+  color: #fff;
 }
 
 body {
@@ -20,27 +21,24 @@ body {
 .cards {
   display: flex;
   gap: 3rem;
-
-  & img {
-    width: 200px;
-  }
+}
+.cards img {
+  width: 200px;
 }
 
 .mostrar {
-  position: absolute;
+  position: fixed;
+  top: 0;
   display: none;
   padding: 0 4rem;
   place-items: center;
   height: 100%;
   backdrop-filter: blur(10px);
   width: 100vw;
-  & img {
-    width: 400px;
-    height: 600px;
-  }
-  & p {
-    color: white;
-  }
+}
+.mostrar img {
+  width: 400px;
+  height: 600px;
 }
 
 .mostrar-text {
@@ -65,10 +63,10 @@ body {
 @media (max-width: 1000px) {
   .mostrar {
     padding: 0 2rem;
-    & img {
-      width: 200px;
-      height: 400px;
-    }
+  }
+  .mostrar img {
+    width: 300px;
+    height: 400px;
   }
 }
 
@@ -78,10 +76,9 @@ body {
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
-
-    & img {
-      width: 180px;
-    }
+  }
+  .cards img {
+    width: 180px;
   }
 
   .mostrar-text {
@@ -95,9 +92,13 @@ body {
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
+  }
+  .cards img {
+    width: 150px;
+  }
 
-    & img {
-      width: 150px;
-    }
+  .mostrar img {
+    width: 250px;
+    height: 400px;
   }
 }
