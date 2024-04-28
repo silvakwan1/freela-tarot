@@ -86,8 +86,8 @@ body {
   .mostrar {
     padding: 0 2rem;
     & img {
-      width: 220px;
-      height: 400px;
+      width: 200px;
+      height: 350px;
     }
   }
   .mostrar-text {
