@@ -72,8 +72,9 @@ body {
 
 @media (max-width: 740px) {
   body {
-    background-size: 900% 900%;
-    animation: gradient 8s ease infinite alternate;
+    background-size: 1000% 900%;
+
+    animation: gradient 4s ease infinite alternate;
   }
   .cards {
     display: flex;
